@@ -14,13 +14,37 @@
   font-weight: bold;
 }
 
+.prev {
+  float:left;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--side-nav-background);
+  border: 1px solid var(--separator-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow);
+}
+
+.next {
+  float:right;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--side-nav-background);
+  border: 1px solid var(--separator-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow);
+}
+
+.nav {
+	padding-bottom: 40px;
+}
+
 /******   Custom anchors   ******/
 a.extern {
   background:url(img/extern.png) no-repeat right;
   padding-right: 14px;
 }
 
-/******** Costom tags (explanation section) *****/
+/******** Custom tags (explanation section) *****/
 dl.tag dt {
   float: left;
   background-color: black;
@@ -33,7 +57,7 @@ dl.tag blockquote {
   border-left: 4px solid #9CAFD4;
 }
 
-/******** Costom images (center) *****/
+/******** Custom images (center) *****/
 img.inline {
   display: block;
   margin: auto;

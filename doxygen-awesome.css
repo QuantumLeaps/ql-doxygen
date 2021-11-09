@@ -1044,7 +1044,7 @@ dl.warning dt, dl.attention dt {
     color: var(--warning-color-dark);
 }
 
-dl.note, dl.reqdef {
+dl.note {
     background: var(--note-color);
     border-left: 8px solid var(--note-color-dark);
     color: var(--note-color-darker);
@@ -1054,7 +1054,7 @@ dl.note dt {
     color: var(--note-color-dark);
 }
 
-dl.bug {
+dl.bug, dl.reqdef {
     background: var(--bug-color);
     border-left: 8px solid var(--bug-color-dark);
     color: var(--bug-color-darker);
