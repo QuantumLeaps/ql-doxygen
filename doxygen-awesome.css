@@ -10,6 +10,7 @@ Modified by Quantum Leaps on 2021-07-16
 MIT License
 
 Copyright (c) 2021 jothepro
+Copyright (c) 2021 Quantum Leaps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -146,7 +147,7 @@ html {
     --fragment-linenumber-color: #cccccc;
     --fragment-linenumber-background: #35393c;
     --fragment-linenumber-border: #1f1f1f;
-    --fragment-lineheight: 20px;
+    --fragment-lineheight: 1.25em;
 
     /* sidebar navigation (top) colors */
     --side-top-background: #ecf0f5;
@@ -693,11 +694,6 @@ html.dark-mode iframe#MSearchResults {
     background-color: var(--side-nav-background-hover);
 }
 
-#nav-sync {
-    top: 12px !important;
-    right: 12px;
-}
-
 #nav-tree .selected {
     text-shadow: none;
     background-image: none;
@@ -1018,10 +1014,10 @@ div.fragment .line:first-child .lineno {
 }
 
 /*
- dl warning, attention, note, deprecated, bug, reqdef ...
+ dl warning, attention, note, deprecated, bug, ...
  */
 
-dl.warning, dl.attention, dl.note, dl.deprecated, dl.bug, dl.remark, dl.reqdef {
+dl.warning, dl.attention, dl.note, dl.deprecated, dl.bug, dl.remark {
     padding: var(--spacing-medium);
     margin: var(--spacing-medium) 0;
     color: var(--page-background-color);
@@ -1054,7 +1050,7 @@ dl.note dt {
     color: var(--note-color-dark);
 }
 
-dl.bug, dl.reqdef {
+dl.bug {
     background: var(--bug-color);
     border-left: 8px solid var(--bug-color-dark);
     color: var(--bug-color-darker);
@@ -1377,7 +1373,7 @@ html.dark-mode .iconfopen, html.dark-mode .iconfclosed {
 
 #nav-path ul {
     background-image: none;
-    background: var(--page-background-color);
+    background: var(--side-nav-background);
     border: none;
     border-top: 1px solid var(--separator-color);
     border-bottom: 1px solid var(--separator-color);

@@ -611,6 +611,28 @@ span.lineno a {
   text-shadow: none;
 }
 
+.prev {
+  float:left;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #EAF5FE;
+  border: 1px solid #B2DAFF;
+  border-radius: 7px;
+}
+
+.next {
+  float:right;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #EAF5FE;
+  border: 1px solid #B2DAFF;
+  border-radius: 7px;
+}
+
+.nav {
+  padding-bottom: 40px;
+}
+
 /******** Custom spans  ********/
 .img {
   padding-left: 20px;
@@ -622,6 +644,22 @@ span.lineno a {
   line-height: 50px;
   padding: 10px 0px 20px 55px;
   white-space: nowrap;
+}
+
+#preview {
+  position:absolute;
+  border:1px solid #ccc;
+  background:#77f;
+  padding:2px;
+  display:none;
+  color:#fff;
+}
+
+.board {
+  background: url(img/board.png) no-repeat;
+  background-position: right;
+  padding: 2px 20px 0px 0px;
+  font-weight: bold;
 }
 
 /********      Icons  ********/

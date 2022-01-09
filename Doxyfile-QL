@@ -1,19 +1,24 @@
-# Doxyfile 1.9.2
+# Doxyfile 1.9.3
 
 ALIASES = "nav{2}=<div class=\"nav\"><span class=\"prev\">&laquo; @ref \1</span><span class=\"next\">@ref \2 &raquo;</span></div>" \
           "nav_prev{1}=<div class=\"nav\"><span class=\"prev\">&laquo; @ref \1</span></div>" \
           "nav_next{1}=<div class=\"nav\"><span class=\"next\">@ref \1 &raquo;</span></div>" \
-          "next{1}=<hr><b>Next:</b> @ref \1</p>" \
+          "next{1}=<div class=\"nav\"><span class=\"next\">@ref \1 &raquo;</span></div>" \
           "description=@par Description" \
-          "amplification=@par Amplification" \
-          "rationale=@par Rationale" \
+          "usage=@par Usage" \
+          "label{1}=<div class=\"label\">\1</div>" \
           "caption{1}=<div class=\"caption\" align=\"center\">\1</div>" \
           "hint=@par Hint" \
-          "usage=@par Usage" \
-          "termref{2}=<a class=\"extern\" target=\"_blank\" href=\"https://www.state-machine.com/\1\">\2</a>" \
-          "reqdef{1}=<hr>@subsection \1 Requirement \1^^@xrefitem reqdef \"Requirement\" \"Requirement Index\" @ref \1 \"\1\"" \
-          "subreqdef{2}=@subsubsection \1-\2 Sub-Requirement \1-\2^^@xrefitem reqdef \"Sub-Requirement\" \"Requirement Index\" @ref \1 \"\1\"-@ref \1-\2 \"\2\"" \
-          "reqref{1}=@ref \1 \"\1\""
+          "webref{2}=<a class=\"extern\" target=\"_blank\" href=\"https://www.state-machine.com/\1\">\2</a>" \
+          "item0{2}=@subsection \1 \1^^<dl class=\"section item\"><dt>\1</dt><dd>\2</dd></dl>" \
+          "subitem0{2}=@subsubsection \1 \1^^<dl class=\"section deprecated\"><dt>\1</dt><dd>\2</dd></dl>" \
+          "item{1}=@subsection \1 \1" \
+          "subitem{1}=@subsubsection \1 \1" \
+          "rtr{1}=@xrefitem srs_tr \"Traceability\" \"Requirements Traceability\" traces to requirement: @ref \1 \"\1\"" \
+          "atr{1}=@xrefitem sas_tr \"Traceability\" \"Architecture Traceability\" traces to architecture item: @ref \1 \"\1\"" \
+          "dtr{1}=@xrefitem sds_tr \"Traceability\" \"Design Traceability\" traces to design item: @ref \1 \"\1\"" \
+          "ptr{1}=@xrefitem misra_tr \"Traceability\" \"Deviation Traceability\" traces to MISRA-C deviation: @ref \1 \"\1\""
+
 
 #---------------------------------------------------------------------------
 # Configuration options related to the LaTeX output
@@ -88,16 +93,15 @@ EXTERNAL_PAGES         = YES
 #---------------------------------------------------------------------------
 # Configuration options related to the dot tool
 #---------------------------------------------------------------------------
-CLASS_DIAGRAMS         = YES
 DIA_PATH               =
 HIDE_UNDOC_RELATIONS   = YES
-HAVE_DOT               = YES
+HAVE_DOT               = NO
 DOT_NUM_THREADS        = 0
 DOT_FONTNAME           = Helvetica
 DOT_FONTSIZE           = 10
 DOT_FONTPATH           =
 CLASS_GRAPH            = YES
-COLLABORATION_GRAPH    = YES
+COLLABORATION_GRAPH    = NO
 GROUP_GRAPHS           = YES
 UML_LOOK               = YES
 UML_LIMIT_NUM_FIELDS   = 10

@@ -3,7 +3,8 @@
 <p>You can use this online help in various ways: either sequentially from beginning to end or just by quickly locating the interesting topic.
 </p>
 
-![Online Help Features](help_using.jpg)
+[![QL-Doxygen on GitHub](help_using.jpg)](https://github.com/QuantumLeaps/ql-doxygen)
+@caption{Online Help Features}
 
 
 @section help_dark_mode Dark Mode Toggle
@@ -15,6 +16,17 @@ The Light display mode is selected
 
 <img src="img/help_dark.png" style="float:left; margin-right:10px;">
 The Dark display mode is selected
+
+
+@section help_tree_view Using the Tree View
+The *Tree View* pane on the left-hand side of the browser displays the hierarchical Table of Contents, which can be either **linked-to** or **unlinked-from** the *Current Topic* displayed on the right-hand side. You can toggle between the two modes by pressing the **Link/Unlink Current Topic** icon at the top of the *Tree View* pane.
+
+<img src="img/tree-view_linked.png" style="float:left; margin-right:10px;">
+When the *Tree View* is **linked** to the Current Topic, the *Tree View* will always follow the currently viewed topic, by expanding and highlighting the pertinent section of the hierarchical Table of Contents.
+
+<div style="clear:both;"></div>
+<img src="img/tree-view_unlinked.png" style="float:left; margin-right:10px;">
+When the *Tree View* is **unlinked** from the Current Topic, the *Tree View* will show only the explicitly selected section of the hierarchical Table of Contents and will **not** follow the topics activated by internal documentation links.
 
 
 @section help_seq Reading Online Help Sequentially
@@ -31,13 +43,9 @@ You can use the following elements:
 - the **Search** box in the upper-right corner of the browser window
 
 
-@section help_tree_view Using the Tree View
-The *Tree View* pane on the left-hand side of the browser displays the hierarchical Table of Contents, which can be either **linked-to** or **unlinked-from** the *Current Topic* displayed on the right-hand side. You can toggle between the two modes by pressing the **Link/Unlink Current Topic** icon at the top of the *Tree View* pane.
+@section help_github QL-Doxygen on GitHub
+If you like this styling for Doxygen, it is based on [doxygen-awesome-css.](https://github.com/jothepro/doxygen-awesome-css). That styling with modifications made by Quantum Leaps is available on [GitHub](https://github.com/QuantumLeaps/ql-doxygen).
 
-<img src="img/tree-view_linked.png" style="float:left; margin-right:10px;">
-When the *Tree View* is **linked** to the Current Topic, the *Tree View* will always follow the currently viewed topic, by expanding and highlighting the pertinent section of the hierarchical Table of Contents.
+[![QL-Doxygen on GitHub](logo_github.png)](https://github.com/QuantumLeaps/ql-doxygen)
 
-<div style="clear:both;"></div>
-<img src="img/tree-view_unlinked.png" style="float:left; margin-right:10px;">
-When the *Tree View* is **unlinked** from the Current Topic, the *Tree View* will show only the explicitly selected section of the hierarchical Table of Contents and will **not** follow the topics activated by internal documentation links.
 */

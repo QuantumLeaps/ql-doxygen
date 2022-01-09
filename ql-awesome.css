@@ -1,3 +1,7 @@
+/******** Overrides of doxygen ********/
+div.ingroups {
+  font-size: 0.5em;
+}
 
 /******** Custom spans  ********/
 .img {
@@ -35,7 +39,35 @@
 }
 
 .nav {
-	padding-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+table.item {
+  text-align: left;
+  width: 100%;
+}
+
+table.item th {
+  width: 1%;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+td.middle {
+  text-align:center;
+}
+
+td.section {
+  text-align:center;
+  font-weight:bold;
+  background-color:var(--blockquote-background);
+}
+
+pre {
+  padding: 10px;
+  background: var(--code-background);
+  color: var(--code-foreground);
+  border-radius: var(--border-radius-small);
 }
 
 /******   Custom anchors   ******/
@@ -57,31 +89,76 @@ dl.tag blockquote {
   border-left: 4px solid #9CAFD4;
 }
 
+dl.item dt {
+  font-size: 110%;
+  font-weight: normal;  padding: var(--spacing-medium);
+  background: var(--code-background);
+  border: 1px solid var(--separator-color);
+  border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
+  margin-bottom: -1px;
+  overflow: auto;
+}
+dl.item dd {
+  margin-inline-start: initial;
+  padding: var(--spacing-medium);
+  border: 1px solid var(--separator-color);
+  border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
+  overflow: auto;
+}
+
+div.label {
+  font-weight: bold;
+}
+
+div.memdoc p {
+  margin-top: 0;
+}
+
+dl.item p {
+  margin-top: 0;
+}
+
 /******** Custom images (center) *****/
 img.inline {
   display: block;
   margin: auto;
 }
 
-/********      Icons  ********/
-.qp_link   {background:url(img/qp_link.png)   no-repeat;}
-.file      {background:url(img/file.png)      no-repeat;}
-.file_c    {background:url(img/file_c.png)    no-repeat;}
-.file_cpp  {background:url(img/file_cpp.png)  no-repeat;}
-.file_doc  {background:url(img/file_doc.png)  no-repeat;}
-.file_h    {background:url(img/file_h.png)    no-repeat;}
-.file_mak  {background:url(img/file_mak.png)  no-repeat;}
-.file_pdf  {background:url(img/file_pdf.png)  no-repeat;}
-.file_py   {background:url(img/file_py.png)   no-repeat;}
-.file_qm   {background:url(img/file_qm.png)   no-repeat;}
-.file_qmp  {background:url(img/file_qmp.png)  no-repeat;}
-.file_tcl  {background:url(img/file_tcl.png)  no-repeat;}
-.file_wish {background:url(img/file_wish.png) no-repeat;}
-.folder    {background:url(img/folder.png)    no-repeat;}
-.key_down  {background:url(img/key_down.png)  no-repeat;}
-.key_ret   {background:url(img/key_ret.png)   no-repeat;}
-.key_up    {background:url(img/key_up.png)    no-repeat;}
-.bug       {background:url(img/bug.png)       no-repeat;}
+#preview {
+  position:absolute;
+  border:1px solid #ccc;
+  background:#77f;
+  padding:2px;
+  display:none;
+  color:#fff;
+}
+
+.board {
+  background: url(img/board.png) no-repeat;
+  background-position: right;
+  padding: 2px 20px 0px 0px;
+  font-weight: bold;
+}
+
+/********  Custom icons  ********/
+.qp_link    {background:url(img/qp_link.png)   no-repeat;}
+.file       {background:url(img/file.png)      no-repeat;}
+.file_c     {background:url(img/file_c.png)    no-repeat;}
+.file_cpp   {background:url(img/file_cpp.png)  no-repeat;}
+.file_doc   {background:url(img/file_doc.png)  no-repeat;}
+.file_h     {background:url(img/file_h.png)    no-repeat;}
+.file_mak   {background:url(img/file_mak.png)  no-repeat;}
+.file_pdf   {background:url(img/file_pdf.png)  no-repeat;}
+.file_py    {background:url(img/file_py.png)   no-repeat;}
+.file_qm    {background:url(img/file_qm.png)   no-repeat;}
+.file_qmp   {background:url(img/file_qmp.png)  no-repeat;}
+.file_tcl   {background:url(img/file_tcl.png)  no-repeat;}
+.file_wish  {background:url(img/file_wish.png) no-repeat;}
+.folder     {background:url(img/folder.png)    no-repeat;}
+.key_down   {background:url(img/key_down.png)  no-repeat;}
+.key_ret    {background:url(img/key_ret.png)   no-repeat;}
+.key_up     {background:url(img/key_up.png)    no-repeat;}
+.bug        {background:url(img/bug.png)       no-repeat;}
 .logo_win   {background:url(img/logo_win48.png)   no-repeat;}
 .logo_linux {background:url(img/logo_linux48.png) no-repeat;}
 .logo_macos {background:url(img/logo_macos48.png) no-repeat;}
