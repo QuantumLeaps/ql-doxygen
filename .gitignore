@@ -1,0 +1,5 @@
+# generated CHM
+*.chm
+
+# generated HTML
+html/
