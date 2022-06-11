@@ -70,8 +70,9 @@ div.ingroups {
 
 /***** from Custom.css *********/
 .next_button {
-    display: inline;
+    display: block;
     padding: var(--spacing-large) 0 var(--spacing-small) 0;
+    color: var(--page-background-color);
     user-select: none;
 }
 
@@ -90,17 +91,17 @@ div.ingroups {
     border-radius: var(--border-radius-medium);
     color: var(--page-secondary-foreground-color) !important;
     text-decoration: none;
-    background-color: var(--side-nav-background);
+    background-color: var(--page-background-color);
     transition: color .08s ease-in-out, background-color .1s ease-in-out;
 }
 
 .next_button a:hover {
     color: var(--page-foreground-color) !important;
-    background-color: var(--side-top-background);
+    background-color: var(--odd-color);
 }
 
 .next_button a::after {
-    content: '〉';
+    content: 'ã€‰';
     color: var(--page-secondary-foreground-color) !important;
     padding-left: var(--spacing-large);
     display: inline-block;
@@ -113,41 +114,49 @@ div.ingroups {
 }
 
 .prev_button {
-    display: inline;
+    display: block;
     padding: var(--spacing-large) 0 var(--spacing-small) 0;
     color: var(--page-background-color);
     user-select: none;
 }
 
+.prev_button::after {
+    /* clearfix */
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .prev_button a {
     overflow: hidden;
-    float: left;
     border: 1px solid var(--separator-color);
     padding: var(--spacing-medium) calc(var(--spacing-large) / 2) var(--spacing-medium) var(--spacing-large);
     border-radius: var(--border-radius-medium);
     color: var(--page-secondary-foreground-color) !important;
     text-decoration: none;
-    background-color: var(--side-nav-background);
+    background-color: var(--page-background-color);
     transition: color .08s ease-in-out, background-color .1s ease-in-out;
 }
 
 .prev_button a:hover {
     color: var(--page-foreground-color) !important;
-    background-color: var(--side-top-background);
+    background-color: var(--odd-color);
 }
 
-.prev_button a::before {
-    content: '〈';
+.prev_button a::after {
+    content: 'ã€‰';
     color: var(--page-secondary-foreground-color) !important;
-    padding-right: var(--spacing-large);
+    padding-left: var(--spacing-large);
     display: inline-block;
     transition: color .08s ease-in-out, transform .09s ease-in-out;
 }
 
-.prev_button a:hover::before {
+.prev_button a:hover::after {
     color: var(--page-foreground-color) !important;
-    transform: translateX(-3px);
+    transform: translateX(3px);
 }
+
+
 
 html.dark-mode #variants_image img {
     filter: brightness(87%) hue-rotate(180deg) invert();
@@ -160,12 +169,32 @@ html.dark-mode #variants_image img {
   color: #00A;
 }
 
-.logo a {
+.logo {
   line-height: 50px;
   padding: 10px 0px 20px 55px;
   white-space: nowrap;
   color: #007;
   font-weight: bold;
+}
+
+.prev {
+  float:left;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--side-nav-background);
+  border: 1px solid var(--separator-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow);
+}
+
+.next {
+  float:right;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--side-nav-background);
+  border: 1px solid var(--separator-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow);
 }
 
 table.item {

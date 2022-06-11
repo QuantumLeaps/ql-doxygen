@@ -1,24 +1,16 @@
 # Doxyfile 1.9.3
 
-ALIASES = "nav{2}=<div class=\"nav\"><span class=\"prev\">&laquo; @ref \1</span><span class=\"next\">@ref \2 &raquo;</span></div>" \
-          "nav_prev{1}=<div class=\"nav\"><span class=\"prev\">&laquo; @ref \1</span></div>" \
-          "nav_next{1}=<div class=\"nav\"><span class=\"next\">@ref \1 &raquo;</span></div>" \
-          "next{1}=<div class=\"nav\"><span class=\"next\">@ref \1 &raquo;</span></div>" \
+ALIASES = "nav{2}=<span class=\"prev_button\">@ref \1</span><span class=\"next_button\">@ref \2</span>" \
+          "nav_prev{1}=<span class=\"prev_button\">@ref \1</span>" \
+          "nav_next{1}=<span class=\"next_button\">@ref \1</span>" \
+          "next{1}=<span class=\"next_button\">@ref \1</span>" \
           "description=@par Description" \
           "usage=@par Usage" \
+          "hint=@par Hint" \
           "label{1}=<div class=\"label\">\1</div>" \
           "caption{1}=<div class=\"caption\" align=\"center\">\1</div>" \
-          "hint=@par Hint" \
           "webref{2}=<a class=\"extern\" target=\"_blank\" href=\"https://www.state-machine.com/\1\">\2</a>" \
-          "item0{2}=@subsection \1 \1^^<dl class=\"section item\"><dt>\1</dt><dd>\2</dd></dl>" \
-          "subitem0{2}=@subsubsection \1 \1^^<dl class=\"section deprecated\"><dt>\1</dt><dd>\2</dd></dl>" \
-          "item{1}=@subsection \1 \1" \
-          "subitem{1}=@subsubsection \1 \1" \
-          "rtr{1}=@xrefitem srs_tr \"Traceability\" \"Requirements Traceability\" traces to requirement: @ref \1 \"\1\"" \
-          "atr{1}=@xrefitem sas_tr \"Traceability\" \"Architecture Traceability\" traces to architecture item: @ref \1 \"\1\"" \
-          "dtr{1}=@xrefitem sds_tr \"Traceability\" \"Design Traceability\" traces to design item: @ref \1 \"\1\"" \
-          "ptr{1}=@xrefitem misra_tr \"Traceability\" \"Deviation Traceability\" traces to MISRA-C deviation: @ref \1 \"\1\""
-
+          "tr{1}=@xrefitem tr \"Traceability\" \"\" traces to: @ref \1" \
 
 #---------------------------------------------------------------------------
 # Configuration options related to the LaTeX output

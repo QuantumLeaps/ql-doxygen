@@ -1,6 +1,9 @@
+## Brought to you by:
+[![Quantum Leaps](https://www.state-machine.com/attachments/logo_ql_400.png)](https://www.state-machine.co)
+
+---------------------------------------------------------------------
 ![ql-doxygen](images/help_using.jpg)
 
----------------------------------------------------------------------------
 # About QL-Doxygen
 
 QL-Doxygen is a Doxygen customization based on

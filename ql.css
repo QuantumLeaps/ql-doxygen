@@ -122,18 +122,9 @@ img.inline {
 }
 
 /********   Anchors     ********/
-a:hover {
-  background-color: #FFFFAA;
-  text-decoration: none;
-}
-
 a.extern {
   background:url(img/extern.png) no-repeat right;
-  padding-right: 14px;
-  text-decoration:none;
-}
-.extern:hover {
-  background-color: #E7E7FF;
+  padding-right: 13px;
 }
 
 /******** Inline code    ********/
@@ -662,34 +653,26 @@ span.lineno a {
   font-weight: bold;
 }
 
-/********      Icons  ********/
-.qp_link   {background:url(img/qp_link.png)   no-repeat;}
-.file      {background:url(img/file.png)      no-repeat;}
-.file_c    {background:url(img/file_c.png)    no-repeat;}
-.file_cpp  {background:url(img/file_cpp.png)  no-repeat;}
-.file_doc  {background:url(img/file_doc.png)  no-repeat;}
-.file_h    {background:url(img/file_h.png)    no-repeat;}
-.file_mak  {background:url(img/file_mak.png)  no-repeat;}
-.file_pdf  {background:url(img/file_pdf.png)  no-repeat;}
-.file_py   {background:url(img/file_py.png)   no-repeat;}
-.file_qm   {background:url(img/file_qm.png)   no-repeat;}
-.file_qmp  {background:url(img/file_qmp.png)  no-repeat;}
-.file_tcl  {background:url(img/file_tcl.png)  no-repeat;}
-.file_wish {background:url(img/file_wish.png) no-repeat;}
-.folder    {background:url(img/folder.png)    no-repeat;}
-.key_down  {background:url(img/key_down.png)  no-repeat;}
-.key_ret   {background:url(img/key_ret.png)   no-repeat;}
-.key_up    {background:url(img/key_up.png)    no-repeat;}
-.bug       {background:url(img/bug.png)       no-repeat;}
+/********  Custom icons  ********/
+.qp_link    {background:url(img/qp_link.png)   no-repeat;}
+.file       {background:url(img/file.png)      no-repeat;}
+.file_c     {background:url(img/file_c.png)    no-repeat;}
+.file_cpp   {background:url(img/file_cpp.png)  no-repeat;}
+.file_doc   {background:url(img/file_doc.png)  no-repeat;}
+.file_h     {background:url(img/file_h.png)    no-repeat;}
+.file_mak   {background:url(img/file_mak.png)  no-repeat;}
+.file_pdf   {background:url(img/file_pdf.png)  no-repeat;}
+.file_py    {background:url(img/file_py.png)   no-repeat;}
+.file_qm    {background:url(img/file_qm.png)   no-repeat;}
+.file_qmp   {background:url(img/file_qmp.png)  no-repeat;}
+.file_tcl   {background:url(img/file_tcl.png)  no-repeat;}
+.file_wish  {background:url(img/file_wish.png) no-repeat;}
+.folder     {background:url(img/folder.png)    no-repeat;}
+.key_down   {background:url(img/key_down.png)  no-repeat;}
+.key_ret    {background:url(img/key_ret.png)   no-repeat;}
+.key_up     {background:url(img/key_up.png)    no-repeat;}
+.bug        {background:url(img/bug.png)       no-repeat;}
 .logo_win   {background:url(img/logo_win48.png)   no-repeat;}
 .logo_linux {background:url(img/logo_linux48.png) no-repeat;}
 .logo_macos {background:url(img/logo_macos48.png) no-repeat;}
-
-/********     Responsive  ********/
-/*
-@media only screen and (max-width: 801px) {
-  #titlearea { display: none; }
-  #nav-path  { display: none; }
-}
-*/
 
