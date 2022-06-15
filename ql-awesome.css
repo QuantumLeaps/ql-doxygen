@@ -68,6 +68,17 @@ div.ingroups {
   border-left: 1px solid var(--separator-color);
 }
 
+dl.post {
+  background: var(--invariant-color);
+  border-left: 8px solid var(--invariant-color-dark);
+  color: var(--invariant-color-darker);
+  padding: var(--spacing-medium);
+  margin: var(--spacing-medium) 0;
+  overflow: hidden;
+  margin-left: 0;
+  border-radius: var(--border-radius-small);
+}
+
 /***** from Custom.css *********/
 .next_button {
     display: inline;
