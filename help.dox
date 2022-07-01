@@ -3,9 +3,8 @@
 <p>You can use this online help in various ways: either sequentially from beginning to end or just by quickly locating the interesting topic.
 </p>
 
-[![QL-Doxygen on GitHub](help_using.jpg)](https://github.com/QuantumLeaps/ql-doxygen)
+[![](help_using.jpg)](https://github.com/QuantumLeaps/ql-doxygen)
 @caption{Online Help Features}
-
 
 @section help_dark_mode Dark Mode Toggle
 
