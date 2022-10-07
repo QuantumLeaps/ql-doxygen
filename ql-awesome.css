@@ -28,6 +28,7 @@ html.dark-mode {
 
 #projectname {
   font-size: 250%;
+  line-height: normal;
 }
 
 #projectnumber {
