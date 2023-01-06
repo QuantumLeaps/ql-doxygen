@@ -1,9 +1,10 @@
 /******** Overrides from doxygen-awesome *****/
 html {
+  --side-nav-fixed-width: 320px;
   --side-top-background: #ecf0f5;
-  --top-height: 200px;
   --side-nav-arrow-opacity: 1;
   --side-nav-background-hover: #E0E0E0;
+  --top-height: 210px;
 }
 
 #top {
@@ -260,6 +261,12 @@ dl.item p {
 img.inline {
   display: block;
   margin: auto;
+}
+
+img.right {
+  float:right;
+  clear:right;
+  margin:0 20px 0 20px;
 }
 
 #preview {

@@ -1,30 +1,34 @@
-# Doxyfile 1.9.3
+# Doxyfile 1.9.5
 
-ALIASES = "nav{2}=<span class=\"prev_button\">@ref \1</span><span class=\"next_button\">@ref \2</span>" \
-          "nav_prev{1}=<span class=\"prev_button\">@ref \1</span>" \
-          "nav_next{1}=<span class=\"next_button\">@ref \1</span>" \
-          "next{1}=<span class=\"next_button\">@ref \1</span>" \
-          "description=@par Description" \
-          "usage=@par Usage" \
-          "hint=@par Hint" \
-          "label{1}=<div class=\"label\">\1</div>" \
-          "caption{1}=<div class=\"caption\" align=\"center\">\1</div>" \
-          "webref{2}=<a class=\"extern\" target=\"_blank\" href=\"https://www.state-machine.com/\1\">\2</a>" \
-          "tr{1}=@xrefitem tr \"Traceability\" \"\" traces to: @ref \1" \
+ALIASES = \
+  "uid{1}=@addindex \1^^<hr>@subsection \1 \1^^" \
+  "tr{1}=@ref \1" \
+  "nav{2}=<span class=\"prev_button\">@ref \1</span><span class=\"next_button\">@ref \2</span>" \
+  "nav_prev{1}=<span class=\"prev_button\">@ref \1</span>" \
+  "nav_next{1}=<span class=\"next_button\">@ref \1</span>" \
+  "next{1}=<span class=\"next_button\">@ref \1</span>" \
+  "description=@par Description" \
+  "amplification=@par Amplification" \
+  "rationale=@par Rationale" \
+  "trace=@par Traceability" \
+  "usage=@par Usage" \
+  "hint=@par Hint" \
+  "caption{1}=<div class=\"caption\"><center><strong>\1</strong></center></div>" \
+  "webref{2}=<a class=\"extern\" target=\"_blank\" href=\"https://www.state-machine.com/\1\">\2</a>"
 
 #---------------------------------------------------------------------------
 # Configuration options related to the LaTeX output
 #---------------------------------------------------------------------------
 GENERATE_LATEX         = NO
-LATEX_OUTPUT           = latex
+LATEX_OUTPUT           = ../latex
 LATEX_CMD_NAME         = latex
 MAKEINDEX_CMD_NAME     = makeindex
 LATEX_MAKEINDEX_CMD    = makeindex
 COMPACT_LATEX          = NO
 PAPER_TYPE             = letter
 EXTRA_PACKAGES         =
-LATEX_HEADER           =
-LATEX_FOOTER           =
+LATEX_HEADER           = ../../ql-doxygen/ql-header.tex
+LATEX_FOOTER           = ../../ql-doxygen/ql-footer.tex
 LATEX_EXTRA_STYLESHEET =
 LATEX_EXTRA_FILES      =
 PDF_HYPERLINKS         = YES
@@ -32,7 +36,7 @@ USE_PDFLATEX           = YES
 LATEX_BATCHMODE        = NO
 LATEX_HIDE_INDICES     = NO
 LATEX_BIB_STYLE        = plain
-LATEX_TIMESTAMP        = NO
+LATEX_TIMESTAMP        = YES
 LATEX_EMOJI_DIRECTORY  =
 #---------------------------------------------------------------------------
 # Configuration options related to the RTF output
@@ -40,7 +44,7 @@ LATEX_EMOJI_DIRECTORY  =
 GENERATE_RTF           = NO
 RTF_OUTPUT             = rtf
 COMPACT_RTF            = NO
-RTF_HYPERLINKS         = NO
+RTF_HYPERLINKS         = YES
 RTF_STYLESHEET_FILE    =
 RTF_EXTENSIONS_FILE    =
 #---------------------------------------------------------------------------
@@ -55,7 +59,7 @@ MAN_LINKS              = NO
 # Configuration options related to the XML output
 #---------------------------------------------------------------------------
 GENERATE_XML           = NO
-XML_OUTPUT             = xml
+XML_OUTPUT             = ../xml
 XML_PROGRAMLISTING     = YES
 XML_NS_MEMB_FILE_SCOPE = NO
 #---------------------------------------------------------------------------
@@ -89,13 +93,14 @@ DIA_PATH               =
 HIDE_UNDOC_RELATIONS   = YES
 HAVE_DOT               = NO
 DOT_NUM_THREADS        = 0
-DOT_FONTNAME           = Helvetica
-DOT_FONTSIZE           = 10
+DOT_COMMON_ATTR        = "fontname=Helvetica,fontsize=10"
+DOT_EDGE_ATTR          = "labelfontname=Helvetica,labelfontsize=10"
+DOT_NODE_ATTR          = "shape=box,height=0.2,width=0.4"
 DOT_FONTPATH           =
 CLASS_GRAPH            = YES
 COLLABORATION_GRAPH    = NO
 GROUP_GRAPHS           = YES
-UML_LOOK               = YES
+UML_LOOK               = NO
 UML_LIMIT_NUM_FIELDS   = 10
 DOT_UML_DETAILS        = NO
 DOT_WRAP_THRESHOLD     = 17
@@ -106,6 +111,7 @@ CALL_GRAPH             = NO
 CALLER_GRAPH           = NO
 GRAPHICAL_HIERARCHY    = YES
 DIRECTORY_GRAPH        = YES
+DIR_GRAPH_MAX_DEPTH    = 1
 DOT_IMAGE_FORMAT       = png
 INTERACTIVE_SVG        = NO
 DOT_PATH               = C:/tools/graphviz/bin
@@ -117,7 +123,6 @@ PLANTUML_CFG_FILE      =
 PLANTUML_INCLUDE_PATH  =
 DOT_GRAPH_MAX_NODES    = 50
 MAX_DOT_GRAPH_DEPTH    = 0
-DOT_TRANSPARENT        = NO
 DOT_MULTI_TARGETS      = NO
 GENERATE_LEGEND        = YES
 DOT_CLEANUP            = YES
