@@ -1,7 +1,9 @@
 # Doxyfile 1.9.5
 
 ALIASES = \
-  "uid{1}=@addindex \1^^<hr>@subsection \1 \1^^" \
+  "uid{2}=@addindex \1^^@subsection \1 \1^^<table><tr><th>\1 <tr style=\"text-align:left\"><th>\2^^" \
+  "uid_litem{1}=<tr> <td><b>\1</b><br>^^" \
+  "enduid=</table>" \
   "tr{1}=@ref \1" \
   "nav{2}=<span class=\"prev_button\">@ref \1</span><span class=\"next_button\">@ref \2</span>" \
   "nav_prev{1}=<span class=\"prev_button\">@ref \1</span>" \
@@ -9,11 +11,14 @@ ALIASES = \
   "next{1}=<span class=\"next_button\">@ref \1</span>" \
   "description=@par Description" \
   "amplification=@par Amplification" \
-  "rationale=@par Rationale" \
-  "trace=@par Traceability" \
-  "usage=@par Usage" \
-  "hint=@par Hint" \
-  "caption{1}=<div class=\"caption\"><center><strong>\1</strong></center></div>" \
+  "rationale=@par Rationale^^" \
+  "trace=@par Traceability^^" \
+  "usage=@par Usage^^" \
+  "hint=@par Hint^^" \
+  "precondition{2}=@par Precondition `\1:\2`^^" \
+  "postcondition{2}=@par Postcondition `\1:\2`^^" \
+  "invariant{2}=@par Invariant `\1:\2`^^" \
+  "caption{1}=<div class=\"caption\"><center><em>\1</em></center></div>" \
   "webref{2}=<a class=\"extern\" target=\"_blank\" href=\"https://www.state-machine.com/\1\">\2</a>"
 
 #---------------------------------------------------------------------------
